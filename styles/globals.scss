@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(208, 60%, 88%) !important;
+}
+html.dark-mode {
+  background-color: #000;
+}
+button:focus {
+  outline: 1px solid #777 !important;
+}
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  -moz-filter: invert(1) hue-rotate(180deg);
+}
+.inverse-dark {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  -moz-filter: invert(1) hue-rotate(180deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+:root {
+  --primary-color:  hsl(208, 72%, 45%);
+  --hover-color:  hsl(208, 72%, 55%);
+
+  --lightbg-color: hsl(208, 60%, 88%);
+}

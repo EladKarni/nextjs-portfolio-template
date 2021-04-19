@@ -52,6 +52,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-common-types@npm:^0.2.35":
+  version: 0.2.35
+  resolution: "@fortawesome/fontawesome-common-types@npm:0.2.35"
+  checksum: d8a25c567cb4949ea63fd63ad320ca1ccd95094ec2e011215af7e415fc6108afa64719cefa3f85b8cf65abf2d349b76fefdb368418ba3c27cc7ba23fcbf4d485
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^1.2.35":
+  version: 1.2.35
+  resolution: "@fortawesome/fontawesome-svg-core@npm:1.2.35"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.35
+  checksum: 2457135c46ff06c32b8dd88cc3e1df96e8d9175657cb57cb74c3e26e7047cd3989a2c76c2d784a37d1edc724e1f3b9ac10e82bf7cc06d74a6a438370b4deac2b
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-solid-svg-icons@npm:^5.15.3":
+  version: 5.15.3
+  resolution: "@fortawesome/free-solid-svg-icons@npm:5.15.3"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.35
+  checksum: dd5c7e006ad8794ec40da55eb2af4a160ddfaff6ea95dba12e95a0a8a88eb7fae6376f1a0be494a8b4012ef60c52aee3caa353896678f2042141bfb5957be1c7
+  languageName: node
+  linkType: hard
+
+"@fortawesome/react-fontawesome@npm:^0.1.14":
+  version: 0.1.14
+  resolution: "@fortawesome/react-fontawesome@npm:0.1.14"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.32
+    react: ">=16.x"
+  checksum: 8e9f2b94d360e82a3cafa5ff660461a012bead11279bd37dd12910bbf084bf0dd997db439c254a318106b69666ff6b3c749982f972ab7da0f7578a1d857d94cf
+  languageName: node
+  linkType: hard
+
 "@hapi/accept@npm:5.0.1":
   version: 5.0.1
   resolution: "@hapi/accept@npm:5.0.1"
@@ -383,6 +420,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap@npm:next":
+  version: 5.0.0-beta3
+  resolution: "bootstrap@npm:5.0.0-beta3"
+  peerDependencies:
+    "@popperjs/core": ^2.9.1
+  checksum: ce64d3f703ce6159c3dea3c76594354b60620e50e39d776b52bbe81d2b81c9d6972649c75073bc0bb500452c279830ec6dd527eece7becf187ee1da5124239c0
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -602,7 +648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:3.5.1":
+"chokidar@npm:3.5.1, chokidar@npm:>=3.0.0 <4.0.0":
   version: 3.5.1
   resolution: "chokidar@npm:3.5.1"
   dependencies:
@@ -1688,7 +1734,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.13":
+"lodash@npm:^4.17.11, lodash@npm:^4.17.13":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 4983720b9abca930a4a46f18db163d7dad8dd00dbed6db0cc7b499b33b717cce69f80928b27bbb1ff2cbd3b19d251ee90669a8b5ea466072ca81c2ebe91e7468
@@ -2002,9 +2048,15 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "nextjs-porfolio-template@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.35
+    "@fortawesome/free-solid-svg-icons": ^5.15.3
+    "@fortawesome/react-fontawesome": ^0.1.14
+    bootstrap: next
     next: 10.1.3
     react: 17.0.2
     react-dom: 17.0.2
+    react-particles-js: ^3.4.1
+    sass: ^1.32.10
   languageName: unknown
   linkType: soft
 
@@ -2269,6 +2321,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"pathseg@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "pathseg@npm:1.2.0"
+  checksum: 30eff04be62903c71c7f4771f690f0fb250c8cd2e6a643fb92c3974e6066f11c4594594e40e65a3d059b5ba72d5410224a88bb5338fd48c024d067b35c7998a6
+  languageName: node
+  linkType: hard
+
 "pbkdf2@npm:^3.0.3":
   version: 3.1.2
   resolution: "pbkdf2@npm:3.1.2"
@@ -2368,7 +2427,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -2486,6 +2545,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"react-particles-js@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "react-particles-js@npm:3.4.1"
+  dependencies:
+    lodash: ^4.17.11
+    tsparticles: ^1.18.10
+  peerDependencies:
+    react: ^16.0.0
+  checksum: 744ea290b91f79f60acc0c9ba67472f0d1c332bc7d6e1b7c75a4a4530799fc7a14a8a70197c43c0fcecb105709ae01d9ffcb5788fc79aa4ceaa0e3605538f1de
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:0.8.3":
   version: 0.8.3
   resolution: "react-refresh@npm:0.8.3"
@@ -2591,6 +2662,17 @@ fsevents@~2.3.1:
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: 549ba83f5b314b59898efe3422120ce1ca7987a6eae5925a5fa5db930dc414d4a9dde0a5594f89638cd6ea60b6840ea961872908933ac2428d1726489db46fa5
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.32.10":
+  version: 1.32.10
+  resolution: "sass@npm:1.32.10"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+  bin:
+    sass: sass.js
+  checksum: dc310c9d4f73fc9fd39c7c3cb7adc481f1d3a7cbd51704ed94972738b181b3db1e485864497edf2d2954340a34b49bfccac61b792e2609431227a6ab521997db
   languageName: node
   linkType: hard
 
@@ -3033,6 +3115,18 @@ fsevents@~2.3.1:
     typescript:
       optional: true
   checksum: 78341a27939de565e2754ff65ebb689743c16e3295528089d143c08d91842cf9029c3d6b3c95a9a20854a114a7904329d02c710d63f7ce4dbf671b8a3e560ac1
+  languageName: node
+  linkType: hard
+
+"tsparticles@npm:^1.18.10":
+  version: 1.26.2
+  resolution: "tsparticles@npm:1.26.2"
+  dependencies:
+    pathseg: ^1.2.0
+  dependenciesMeta:
+    pathseg:
+      optional: true
+  checksum: be01ef8f62757177dcb674a0bf0826d7ce8b33e922a1f6b25777c107a4b17ce39d2010ed4986adfbd3234899aa36030c6d9f9e16a244ef4c2e113ea38783b280
   languageName: node
   linkType: hard
 
