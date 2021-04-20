@@ -17,7 +17,7 @@ const Header = () => {
 
     const toggleDarkMode = () =>  {
         document.documentElement.classList.toggle('dark-mode')
-        document.getElementById('not-dark').classList.toggle('inverse-dark')
+        // document.getElementById('not-dark').classList?.toggle('inverse-dark')
         // document.getElementById('not').classList.toggle('inverse-dark')
         let imgPro = document.getElementsByClassName('img-pro')
         for(let i = 0; i < imgPro.length; i += 1) {
@@ -34,8 +34,10 @@ const Header = () => {
         <div>
             <ParticlesBG />
             <div className={Styles.Header}>
-                <h1>{content.name}</h1>
-                <p className={[Styles.Slogan, Styles.AnimTypewriter].join(' ')}>{content.slogan}</p>
+                <div className={Styles.CenterText}>
+                    <h1>{content.name}</h1>
+                    <p className={[Styles.Slogan, Styles.AnimTypewriter].join(' ')}>{content.slogan}</p>
+                </div>
                 <label className={Styles.Switch}>
                     <input id="mode-switch" onClick={toggleDarkMode} type="checkbox"/>
                     <span className={`${Styles.Slider} ${Styles.Round}`}></span>
@@ -45,7 +47,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={Styles.BackToTopBtn} >
-                <Image id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
+                <Image onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
             </div>
         </div>
     )
