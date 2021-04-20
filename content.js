@@ -1,4 +1,4 @@
 export const header = {
-    name: 'Elad Karni',
-    slogan: 'An Extrevert Technology Nerd'
+    name: 'Some Person',
+    slogan: 'A Human Among Humans'
 }
