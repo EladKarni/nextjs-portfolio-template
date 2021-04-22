@@ -129,6 +129,13 @@
         }
     }
 }
+@media screen and (max-width: 1400px) {
+    .About {
+        .AboutMe {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .About {
