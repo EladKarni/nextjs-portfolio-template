@@ -1,5 +1,5 @@
 // import HeaderButton from '../layouts/HeaderButton'
-import { info as content } from '../../content'
+import { info } from '../../content'
 import Styles from './Header.module.scss'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,19 +34,19 @@ const Header = () => {
             <ParticlesBG />
             <div className={Styles.Header}>
                 <div className={Styles.CenterText}>
-                    <h1>{content.name}</h1>
-                    <p className={[Styles.Slogan, Styles.AnimTypewriter].join(' ')}>{content.slogan}</p>
+                    <h1>{info.name}</h1>
+                    <p className={[Styles.Slogan, Styles.AnimTypewriter].join(' ')}>{info.slogan}</p>
                 </div>
                 <label className={Styles.Switch}>
                     <input id="mode-switch" onClick={toggleDarkMode} type="checkbox"/>
                     <span className={`${Styles.Slider} ${Styles.Round}`}></span>
                 </label>
                 <div className={Styles.PortfolioActionBtn}>
-                    <a href="#about"><button>Checkout Portfolio<FontAwesomeIcon icon="eye" size="lg" /></button></a>
+                    <a href="#about"><button><FontAwesomeIcon icon="arrow-circle-down" size="3x" /></button></a>
                 </div>
             </div>
             <div className={Styles.BackToTopBtn} >
-                <Image onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
+                <Image id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
             </div>
         </div>
     )

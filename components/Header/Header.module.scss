@@ -53,27 +53,25 @@
         }
 
     .PortfolioActionBtn {
-        width: 225px;
         position: absolute;
-        bottom: 5%;
+        bottom: 5vh;
 
         button {
-            width: 100%;
-            background-color: var(--primary-color);
-            color: #fff;
-            border: #000;
-            outline: #000;
-            padding: 5px 15px;
-            padding-bottom: 7px;
-            border-radius: 3px;
-
+            color: var(--primary-color);
+            border: none;
+            background-color: transparent;
+            svg {
+                margin: auto;
+            }
             &:active {
                 outline: 0;
             }
 
             &:hover {
-                background-color: var(--hover-color);
+                color: var(--hover-color);
             }
+
+        
         }
     }
 
@@ -133,10 +131,6 @@
         -ms-transform: translateX(26px);
         transform: translateX(26px);
     }    
-
-    svg {
-        padding-left: 0.5rem;
-    }
 }
 
 .BackToTopBtn {
