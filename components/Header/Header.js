@@ -1,9 +1,8 @@
 // import HeaderButton from '../layouts/HeaderButton'
-import { header as content } from '../../content'
+import { info as content } from '../../content'
 import Styles from './Header.module.scss'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye  } from '@fortawesome/free-solid-svg-icons'
 import ParticlesBG from '../Particles/ParticlesBG'
 
 const Header = () => {
@@ -17,8 +16,8 @@ const Header = () => {
 
     const toggleDarkMode = () =>  {
         document.documentElement.classList.toggle('dark-mode')
-        // document.getElementById('not-dark').classList?.toggle('inverse-dark')
-        // document.getElementById('not').classList.toggle('inverse-dark')
+        document.getElementById('not-dark').classList.toggle('inverse-dark')
+        document.getElementById('not').classList.toggle('inverse-dark')
         let imgPro = document.getElementsByClassName('img-pro')
         for(let i = 0; i < imgPro.length; i += 1) {
             imgPro.item(i).classList.toggle("inverse-dark");
@@ -43,7 +42,7 @@ const Header = () => {
                     <span className={`${Styles.Slider} ${Styles.Round}`}></span>
                 </label>
                 <div className={Styles.PortfolioActionBtn}>
-                    <a href="#about"><button>Checkout Portfolio<FontAwesomeIcon icon={faEye} /></button></a>
+                    <a href="#about"><button>Checkout Portfolio<FontAwesomeIcon icon="eye" size="lg" /></button></a>
                 </div>
             </div>
             <div className={Styles.BackToTopBtn} >
