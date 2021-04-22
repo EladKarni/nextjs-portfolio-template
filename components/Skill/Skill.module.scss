@@ -1,6 +1,9 @@
 .Skill {
     align-self: center;
     text-align: center;
+    width: 65px;
+    height: 65px;
+    height: auto;
     &:hover{
         color: var(--primary-color);
     }

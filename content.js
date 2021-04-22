@@ -1,11 +1,16 @@
-export const header = {
+export const info = {
     name: 'Some Person',
-    slogan: 'A Human Among Humans'
+    slogan: 'A Human Among Humans',
+    address: 'City, State Country',
+    phone: '(555) 555-5555',
+    email: 'myaddress@domain.com'
 }
 
 export const about = {
     profileImage: 'https://www.fillmurray.com/300/300',
-    aboutText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?'
+    aboutText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?',
+    contactText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?'
+
 }
 
 export const skillsBar = [

@@ -1,5 +1,5 @@
 // import HeaderButton from '../layouts/HeaderButton'
-import { header as content } from '../../content'
+import { info as content } from '../../content'
 import Styles from './Header.module.scss'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

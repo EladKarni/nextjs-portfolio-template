@@ -5,7 +5,7 @@ const Skill = ({ faClass, label }) => {
     return (
         <div className={Styles.Skill}>
             <FontAwesomeIcon icon={faClass} size="3x"/>
-            <h5>{label}</h5>
+            <h6>{label}</h6>
         </div>
     )
 }
