@@ -12,11 +12,11 @@ const About = () => {
                     <div className={Styles.ProfileImage}>
                         <Image id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
                     </div>
-                    <div id="Skills" className={Styles.Skills}> 
+                    {/* <div id="Skills" className={Styles.Skills}> 
                         {skillsBar.map((skill) => 
                             <Skill key={skill.name} faClass={skill.faClass} label={skill.name}/>
                         )}
-                    </div>
+                    </div> */}
                 </div>
                 <div className={Styles.AboutMe}>
                     <div className={Styles.AboutText}>
@@ -38,7 +38,7 @@ const About = () => {
                             {info.address}
                         </span>
                         <span>
-                            {info.phone}
+                            <a href={info.phone}>{info.phone}</a>
                         </span> 
                         <span>
                             {info.email}

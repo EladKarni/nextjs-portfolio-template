@@ -1,9 +1,9 @@
 .About {
     display: grid;
-    grid-template-columns: 0.75fr 2fr;
+    grid-template-columns: 0.5fr 2fr;
     grid-template-rows: auto;
     width: 70%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     justify-content: center;
     column-gap: 15px;
@@ -50,6 +50,9 @@
                 "contact btns btns";
         grid-template-columns: 1fr 2fr;
 
+        p {
+            line-height: 25px;
+        }
         .AboutText {
             grid-area: about;
 
@@ -93,6 +96,7 @@
         .ResumePortfolioBtns {
             grid-area: btns;
             margin: auto;
+            width: 225px;
 
             div {
                 display: flex;
@@ -112,10 +116,9 @@
                         color: #fff;
                         border: #000;
                         outline: #000;
-                        padding: 10px 25px;
-                        padding-bottom: 7px;
+                        padding: 5px 5px;
                         border-radius: 3px;
-            
+                        font-weight: bold;
                         &:active {
                             outline: 0;
                         }
