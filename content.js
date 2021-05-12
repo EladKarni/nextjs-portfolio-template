@@ -63,3 +63,43 @@ export const skillsBar = [
         faClass: ['fab', 'yarn']
     },
 ]
+
+export const timelineData = [
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 25 2019',
+    },
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 26 2019',
+    },
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 27 2019',
+    },
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 28 2019',
+    },
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 29 2019',
+    },
+    {
+        title: 'My Job Title',
+        company: 'Company Name',
+        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
+        date: 'February 25 2020',
+    },
+
+]

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import About from '../components/About/About'
 import Header from '../components/Header/Header'
+import Timeline from '../components/Timeline/Timeline';
 
 import Styles from '../styles/index.module.scss'
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <div className={Styles.App}>
       <Header/>
       <About/>
+      <Timeline />
     </div>
   )
 }
