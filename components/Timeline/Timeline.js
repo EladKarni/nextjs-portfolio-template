@@ -12,7 +12,7 @@ const Timeline = () => (
                     <div className={Styles.TimelineContent}>
                         <time>{data.date}</time>
                         <h4>{data.company}</h4>
-                        <h4>{data.title}</h4>
+                        <h5>{data.title}</h5>
                         <p>{data.text}</p>
                         <span className={Styles.Circle} />
                     </div>

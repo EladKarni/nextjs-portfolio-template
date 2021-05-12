@@ -1,5 +1,21 @@
 .Timeline {
     text-align: center;
+    width: 70%;
+    max-width: 1100px;
+    margin: auto;
+
+    
+
+    h2 {
+        color: var(--primary-color);
+        font-weight: 500;
+        width: 50%;
+        margin: auto;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        border-bottom: solid 2px var(--primary-color);
+        margin-bottom: 15px;
+    }
 
     .TimelineContainer {
         display: flex;
@@ -56,26 +72,44 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            display: grid;
+            grid-template-areas:    'cmpy cmpy'
+                                    'title time'
+                                    'text text';
+            grid-template-columns: 2fr 1fr;
             padding: 15px;
             position: relative;
-            width: 400px;
-            max-width: 70%;
-            text-align: right;
+            width: 100%;
+            text-align: left;
 
+            time, h5 {
+                min-height: 25px;
+                line-height: 25px;
+                font-style: italic;
+            }
+            
             time {
                 color: #777;
                 font-size: 12px;
-                font-weight: bold;
+                grid-area: time;
+                text-align: right;
             }
 
+            h4 {
+                color: var(--primary-color);
+                grid-area: cmpy;
+            }
+
+            h5 {
+                color: #777;
+                grid-area: title;
+            }
+            
             p {
                 font-size: 16px;
                 line-height: 24px;
                 margin: 15px 0;
-                max-width: 250px;
+                grid-area: text;
             }
             
             .Circle {
@@ -105,22 +139,82 @@
         
     }
 }
-@media only screen and (max-width: 1023px) {
-    .TimelineContent {
-        max-width: 100%;
+
+@media only screen and (max-width: 1100px) {
+    .Timeline {
+        width: 80%;
+        margin: auto;
+
+        h2 {
+            width: 100%;
+        }
+
+
+        .TimelineContainer {
+            &::after {
+                background-color: var(--primary-color);
+                content: '';
+                position: absolute;
+                left: 0px;
+                width: 4px;
+                height: 100%;
+            }
+
+            .TimelineItem {
+                width: 100%;
+
+                &:nth-child(even) {
+                    align-self: flex-end;
+                    justify-content: flex-start;
+                    padding-left: 30px;
+                    padding-right: 0;
+
+                    .TimelineContent {
+                        text-align: left;
+                        align-items: flex-start;
+
+                        .Circle {
+                            left: -38px;
+                        }
+
+                        &::after {
+                            right: auto;
+                            left: -7.5px;
+                            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+                
+                &:nth-child(odd) {
+                    .TimelineContent { 
+                        .Circle {
+                            left: -38px;
+                        }
+                    }
+                }
+            }
+
+            .TimelineContent {
+                max-width: 100%;
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .TimelineContent,
-    .TimelineItem:nth-child(odd) .TimelineContent {
-        padding: 15px 10px;
-        text-align: center;
-        align-items: center;
-    }
-    .TimelineContent {
-        time {
-            margin-top: 20px;
+@media only screen and (max-width: 1400px) {
+.Timeline {
+    .TimelineContainer {
+        .TimelineContent {
+            grid-template-areas:    'cmpy'
+                                    'time'
+                                    'title'
+                                    'text';
+            grid-template-columns: 1fr;
+            
+            time {
+                text-align: left;
+            }
         }
     }
+}
 }

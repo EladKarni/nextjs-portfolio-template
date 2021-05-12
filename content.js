@@ -66,40 +66,29 @@ export const skillsBar = [
 
 export const timelineData = [
     {
-        title: 'My Job Title',
+        title: 'Your Job Title',
         company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 25 2019',
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, metus id tincidunt sagittis, urna enim sollicitudin justo, tempus lacinia turpis magna a orci. Sed vel tortor lacinia neque feugiat sodales ut tincidunt ante. Vestibulum non velit interdum sem aliquet mattis. Praesent fermentum lectus nec maximus volutpat. Aliquam maximus felis in mauris dictum iaculis. Etiam nec pulvinar est. Maecenas finibus quam magna, sed maximus dolor vulputate sit amet.`,
+        date: 'September 2020 - May 2021',
     },
     {
-        title: 'My Job Title',
+        title: 'Your Job Title',
         company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 26 2019',
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, metus id tincidunt sagittis, urna enim sollicitudin justo, tempus lacinia turpis magna a orci. Sed vel tortor lacinia neque feugiat sodales ut tincidunt ante. Vestibulum non velit interdum sem aliquet mattis. Praesent fermentum lectus nec maximus volutpat. Aliquam maximus felis in mauris dictum iaculis. Etiam nec pulvinar est. Maecenas finibus quam magna, sed maximus dolor vulputate sit amet.`,
+        date: 'November 2019 - August 2020',
     },
     {
-        title: 'My Job Title',
+        title: 'Your Job Title',
         company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 27 2019',
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, metus id tincidunt sagittis, urna enim sollicitudin justo, tempus lacinia turpis magna a orci. Sed vel tortor lacinia neque feugiat sodales ut tincidunt ante. Vestibulum non velit interdum sem aliquet mattis. Praesent fermentum lectus nec maximus volutpat. Aliquam maximus felis in mauris dictum iaculis. Etiam nec pulvinar est. Maecenas finibus quam magna, sed maximus dolor vulputate sit amet.`,
+        date: 'May 2019 - October 2019',
     },
     {
-        title: 'My Job Title',
+        title: 'Your Job Title',
         company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 28 2019',
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, metus id tincidunt sagittis, urna enim sollicitudin justo, tempus lacinia turpis magna a orci. Sed vel tortor lacinia neque feugiat sodales ut tincidunt ante. Vestibulum non velit interdum sem aliquet mattis. Praesent fermentum lectus nec maximus volutpat. Aliquam maximus felis in mauris dictum iaculis. Etiam nec pulvinar est. Maecenas finibus quam magna, sed maximus dolor vulputate sit amet.`,
+        date: 'July 2017 - August 2019',
     },
-    {
-        title: 'My Job Title',
-        company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 29 2019',
-    },
-    {
-        title: 'My Job Title',
-        company: 'Company Name',
-        text: 'Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository, Started working on the app-ideas repository',
-        date: 'February 25 2020',
-    },
-
 ]
+
+export const reverseTimeline = true; 
