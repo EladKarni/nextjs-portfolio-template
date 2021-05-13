@@ -1,0 +1,75 @@
+.Projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+
+    .ProjectElement {
+        width: 400px;
+        height: 400px;
+        display: grid;
+        grid-template-rows: 300px auto;
+        overflow: hidden;
+        background-color: var(--primary-color);
+        transition: 1s cubic-bezier(0,0,.55,1.36);
+
+        &:hover {
+            grid-template-rows: 100px auto;
+        }
+
+        &:hover .InfoSection .Info {
+            justify-content: start;
+            margin-top: 1rem;
+
+            p {
+                display: block;
+            }
+        }
+
+
+
+        .InfoSection {
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.5fr 0.75fr;
+            padding: 0 1rem;
+            background-color: var(--primary-color);
+
+            .Info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: hsla(0, 0%, 0%, 0.699);
+                transition: 1s linear;
+
+                p {
+                    display: none;
+                }
+            }
+
+            .SkillIcons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .Skills {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    color: var(--lightbg-color);
+                
+                    & > div {
+                        font-size: 8px;
+                        margin: 3px;
+                    }
+        
+                    h6 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

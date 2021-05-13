@@ -38,30 +38,30 @@ export const skillsBar = [
         name: "Node",
         faClass: ['fab', 'node']
     },
-    {
-        name: "Python",
-        faClass: ['fab', 'python']
-    },
-    {
-        name: "Java",
-        faClass: ['fab', 'java']
-    },
-    {
-        name: "PHP",
-        faClass: ['fab', 'php']
-    },
-    {
-        name: "NPM",
-        faClass: ['fab', 'npm']
-    },
-    {
-        name: "Linux",
-        faClass: ['fab', 'linux']
-    },
-    {
-        name: "Yarn",
-        faClass: ['fab', 'yarn']
-    },
+    // {
+    //     name: "Python",
+    //     faClass: ['fab', 'python']
+    // },
+    // {
+    //     name: "Java",
+    //     faClass: ['fab', 'java']
+    // },
+    // {
+    //     name: "PHP",
+    //     faClass: ['fab', 'php']
+    // },
+    // {
+    //     name: "NPM",
+    //     faClass: ['fab', 'npm']
+    // },
+    // {
+    //     name: "Linux",
+    //     faClass: ['fab', 'linux']
+    // },
+    // {
+    //     name: "Yarn",
+    //     faClass: ['fab', 'yarn']
+    // },
 ]
 
 export const timelineData = [

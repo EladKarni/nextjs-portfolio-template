@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import About from '../components/About/About'
 import Header from '../components/Header/Header'
+import Projects from '../components/Projects/Projects';
 import Timeline from '../components/Timeline/Timeline';
 
 import Styles from '../styles/index.module.scss'
@@ -16,9 +17,10 @@ export default function Home() {
 
   return (
     <div className={Styles.App}>
-      <Header/>
+      {/* <Header/>
       <About/>
-      <Timeline />
+      <Timeline /> */}
+      <Projects />
     </div>
   )
 }
