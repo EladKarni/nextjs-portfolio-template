@@ -17,9 +17,9 @@ export default function Home() {
 
   return (
     <div className={Styles.App}>
-      {/* <Header/>
+      <Header/>
       <About/>
-      <Timeline /> */}
+      <Timeline />
       <Projects />
     </div>
   )
