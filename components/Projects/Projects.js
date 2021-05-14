@@ -12,11 +12,11 @@ const Projects = () => {
                 <p>Here is a list of my past projects</p>
             </div>
             <div className={Styles.ProjectList}>
-                {projects.map((project) =>
-                    <div className={Styles.ProjectElement}>
+                {projects.map((project, index) =>
+                    <div key={`${project.title}${index}`} className={Styles.ProjectElement}>
                         <div className={Styles.Preview}>
                             <Image
-                                src="https://via.placeholder.com/300x275"
+                                src={project.preview}
                                 alt="Picture of the author"
                                 width={300}
                                 height={275}

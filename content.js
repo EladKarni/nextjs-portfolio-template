@@ -121,7 +121,8 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
     {
         title: 'Project Title',
@@ -152,7 +153,8 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
     {
         title: 'Project Title',
@@ -183,7 +185,8 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
     {
         title: 'Project Title',
@@ -214,7 +217,8 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
     {
         title: 'Project Title',
@@ -245,7 +249,8 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
     {
         title: 'Project Title',
@@ -276,6 +281,7 @@ export const projects = [
                 faClass: ['fab', 'node']
             }
         ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
+        preview: 'https://via.placeholder.com/300x275',
     },
 ]
