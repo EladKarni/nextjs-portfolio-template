@@ -37,7 +37,7 @@ const About = () => {
                             {info.address}
                         </span>
                         <span>
-                            <a href={info.phone}>{info.phone}</a>
+                            <a href={`tel:${info.phone}`}>{info.phone}</a>
                         </span> 
                         <span>
                             {info.email}
