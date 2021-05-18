@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Skill from '../Skill/Skill'
 import { projects } from '../../content'
 
@@ -15,7 +14,7 @@ const Projects = () => {
                 {projects.map((project, index) =>
                     <div key={`${project.title}${index}`} className={Styles.ProjectElement}>
                         <div className={Styles.Preview}>
-                            <Image
+                            <img
                                 src={project.preview}
                                 alt="Picture of the author"
                                 width={300}

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { info, about, skillsBar} from '../../content'
 import Skill from '../Skill/Skill'
 import Styles from './About.module.scss'
@@ -10,7 +9,7 @@ const About = () => {
             <div id="about" className={Styles.About}>
                 <div className={Styles.ProfileSkills}>
                     <div className={Styles.ProfileImage}>
-                        <Image id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
+                        <img id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
                     </div>
                     {/* <div id="Skills" className={Styles.Skills}> 
                         {skillsBar.map((skill) => 

@@ -1,7 +1,6 @@
 // import HeaderButton from '../layouts/HeaderButton'
 import { info } from '../../content'
 import Styles from './Header.module.scss'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ParticlesBG from '../Particles/ParticlesBG'
 
@@ -46,7 +45,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={Styles.BackToTopBtn} >
-                <Image id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
+                <img id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
             </div>
         </div>
     )
