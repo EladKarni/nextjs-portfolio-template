@@ -1,8 +1,15 @@
 import React, { useEffect } from 'react';
-import About from '../components/About/About'
+import dynamic from 'next/dynamic'
+
+// const Header = dynamic(() => import('../components/Header/Header'))
+const About = dynamic(() => import('../components/About/About'))
+const Timeline = dynamic(() => import('../components/Timeline/Timeline'))
+const Projects = dynamic(() => import('../components/Projects/Projects'))
+
 import Header from '../components/Header/Header'
-import Projects from '../components/Projects/Projects';
-import Timeline from '../components/Timeline/Timeline';
+// import About from '../components/About/About'
+// import Projects from '../components/Projects/Projects';
+// import Timeline from '../components/Timeline/Timeline';
 
 import Styles from '../styles/index.module.scss'
 export default function Home() {
