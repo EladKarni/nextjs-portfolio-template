@@ -26,7 +26,7 @@ const Header = () => {
           localStorage.setItem('mode', 'Dark')
         else
           localStorage.setItem('mode', 'Light')
-        }
+    }
 
     return (
         <div>
@@ -34,7 +34,7 @@ const Header = () => {
             <div className={Styles.Header}>
                 <div className={Styles.CenterText}>
                     <h1>{info.name}</h1>
-                    <p className={[Styles.Slogan, Styles.AnimTypewriter].join(' ')}>{info.slogan}</p>
+                    <p className={Styles.Slogan}>{info.slogan}</p>
                 </div>
                 <label className={Styles.Switch}>
                     <input id="mode-switch" onClick={toggleDarkMode} type="checkbox"/>

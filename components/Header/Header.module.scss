@@ -18,13 +18,10 @@
             }
             
             .Slogan {
-                border-right: 2px solid rgba(25, 25, 25, 0.75);
-                font-size: max(3vw, 24px);
-                text-align: center;
-                white-space: nowrap;
-                overflow: hidden;
-                transform: translateY(-50%);
                 font-family: "Anonymous Pro", monospace !important;
+                font-size: 26px;
+                margin: auto;
+                width: 50%;
             }
 
             .AnimTypewriter {
