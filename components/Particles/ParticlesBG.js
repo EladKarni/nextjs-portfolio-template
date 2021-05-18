@@ -3,11 +3,10 @@ import Particles from 'react-particles-js';
 function ParticlesBG() {
     return (
         <Particles
-            height="100vh"
-            width="100%"
             style={{
                 position: "absolute",
                 top: "0",
+                left: "0",
                 margin: "0",
                 padding: "0",
                 height: "100vh",

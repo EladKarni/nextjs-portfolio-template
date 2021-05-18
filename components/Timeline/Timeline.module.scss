@@ -1,10 +1,6 @@
 .Timeline {
     text-align: center;
-    width: 70%;
-    max-width: 1100px;
-    margin: auto;
-
-    
+    margin: auto;    
 
     h2 {
         color: var(--primary-color);
@@ -142,9 +138,6 @@
 
 @media only screen and (max-width: 1100px) {
     .Timeline {
-        width: 80%;
-        margin: auto;
-
         h2 {
             width: 100%;
         }
