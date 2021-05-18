@@ -7,7 +7,7 @@ export const info = {
 }
 
 export const about = {
-    profileImage: 'https://www.fillmurray.com/300/300',
+    profileImage: '/profile.webp',
     aboutText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?',
     contactText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?'
 
@@ -122,7 +122,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -154,7 +154,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -186,7 +186,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -218,7 +218,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -250,7 +250,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -282,6 +282,6 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
 ]
