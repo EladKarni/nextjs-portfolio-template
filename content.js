@@ -13,57 +13,6 @@ export const about = {
 
 }
 
-export const skillsBar = [
-    {
-        name: "HTML5",
-        faClass: ['fab', 'html5']
-    },
-    {
-        name: "CSS3",
-        faClass: ['fab', 'css3']
-    },
-    {
-        name: "Javascript",
-        faClass: ['fab', 'js']
-    },
-    {
-        name: "React",
-        faClass: ['fab', 'react']
-    },
-    {
-        name: "SASS",
-        faClass: ['fab', 'sass']
-    },
-    {
-        name: "Node",
-        faClass: ['fab', 'node']
-    },
-    // {
-    //     name: "Python",
-    //     faClass: ['fab', 'python']
-    // },
-    // {
-    //     name: "Java",
-    //     faClass: ['fab', 'java']
-    // },
-    // {
-    //     name: "PHP",
-    //     faClass: ['fab', 'php']
-    // },
-    // {
-    //     name: "NPM",
-    //     faClass: ['fab', 'npm']
-    // },
-    // {
-    //     name: "Linux",
-    //     faClass: ['fab', 'linux']
-    // },
-    // {
-    //     name: "Yarn",
-    //     faClass: ['fab', 'yarn']
-    // },
-]
-
 export const timelineData = [
     {
         title: 'Your Job Title',
@@ -285,3 +234,7 @@ export const projects = [
         preview: '/projectImage.png',
     },
 ]
+
+export const footer = {
+    message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+}

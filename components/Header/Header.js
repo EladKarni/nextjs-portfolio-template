@@ -5,14 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ParticlesBG from '../Particles/ParticlesBG'
 
 const Header = () => {
-    const scrollTo = () => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        })
-    }
-
+    
     const toggleDarkMode = () =>  {
         document.documentElement.classList.toggle('dark-mode')
         document.getElementById('not-dark').classList.toggle('inverse-dark')
@@ -43,9 +36,6 @@ const Header = () => {
                 <div className={Styles.PortfolioActionBtn}>
                     <a aria-label="call-to-action" href="#about"><button aria-label="call-to-action"><FontAwesomeIcon icon="arrow-circle-down" size="3x" /></button></a>
                 </div>
-            </div>
-            <div className={Styles.BackToTopBtn} >
-                <img id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
             </div>
         </div>
     )

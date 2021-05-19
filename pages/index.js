@@ -11,6 +11,8 @@ const Projects = dynamic(() => import('../components/Projects/Projects'))
 
 
 import Styles from '../styles/index.module.scss'
+import Footer from '../components/Footer/Footer';
+import BackToTopBtn from '../components/BackToTopBtn/BackToTopBtn';
 export default function Home() {
 
   useEffect(() => {
@@ -22,16 +24,20 @@ export default function Home() {
   }, [])
 
   return (
-    <div className={Styles.App}>
-      <Head>
-        <title>Elad's Resume Website</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Elad's resume website that was built using an open source template that I developed with Next.JS" />
-      </Head>
-      <Header/>
-      <About/>
-      <Timeline />
-      <Projects />
-    </div>
+    <>
+      <div className={Styles.App}>
+        <Head>
+          <title>Elad's Resume Website</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Elad's resume website that was built using an open source template that I developed with Next.JS" />
+        </Head>
+        <Header/>
+        <About/>
+        <Timeline />
+        <Projects />
+      </div>
+      <BackToTopBtn />
+      <Footer />
+    </>
   )
 }
