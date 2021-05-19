@@ -10,7 +10,6 @@ export const about = {
     profileImage: '/profile.webp',
     aboutText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?',
     contactText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?'
-
 }
 
 export const timelineData = [
