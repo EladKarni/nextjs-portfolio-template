@@ -199,8 +199,8 @@
     .TimelineContainer {
         .TimelineContent {
             grid-template-areas:    'cmpy'
-                                    'time'
                                     'title'
+                                    'time'
                                     'text';
             grid-template-columns: 1fr;
             

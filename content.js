@@ -1,6 +1,6 @@
 export const info = {
     name: 'Some Person',
-    slogan: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?',
+    slogan: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam',
     address: 'City, State Country',
     phone: '(555) 555-5555',
     email: 'myaddress@domain.com'

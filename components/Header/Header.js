@@ -36,12 +36,12 @@ const Header = () => {
                     <h1>{info.name}</h1>
                     <p className={Styles.Slogan}>{info.slogan}</p>
                 </div>
-                <label className={Styles.Switch}>
+                <label id="theme-switcher" className={Styles.Switch}>
                     <input id="mode-switch" onClick={toggleDarkMode} type="checkbox"/>
                     <span className={`${Styles.Slider} ${Styles.Round}`}></span>
                 </label>
                 <div className={Styles.PortfolioActionBtn}>
-                    <a href="#about"><button><FontAwesomeIcon icon="arrow-circle-down" size="3x" /></button></a>
+                    <a aria-label="call-to-action" href="#about"><button aria-label="call-to-action"><FontAwesomeIcon icon="arrow-circle-down" size="3x" /></button></a>
                 </div>
             </div>
             <div className={Styles.BackToTopBtn} >
