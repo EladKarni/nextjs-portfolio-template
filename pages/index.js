@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 import Header from '../components/Header/Header'
 
@@ -19,6 +21,13 @@ export default function Home() {
       const checkbox = document.getElementById('mode-switch')
       checkbox.checked = true
     }
+
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease',
+      delay: 100,
+    });
   }, [])
 
   return (
