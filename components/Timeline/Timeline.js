@@ -10,9 +10,9 @@ const Timeline = () => (
             {jobs.map((data, idx) => (
                 <div className={Styles.TimelineItem} key={idx}>
                     <div className={Styles.TimelineContent}>
+                        <time>{data.date}</time>
                         <h4>{data.company}</h4>
                         <h5>{data.title}</h5>
-                        <time>{data.date}</time>
                         <p>{data.text}</p>
                         <span className={Styles.Circle} />
                     </div>

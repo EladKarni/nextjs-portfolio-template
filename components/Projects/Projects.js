@@ -24,7 +24,7 @@ const Projects = () => {
                         <div className={Styles.InfoSection}>
                             <div className={Styles.Info}>
                                 <h4>{project.title}</h4>
-                                <h5>{project.subtitle}</h5>
+                                <h6>{project.subtitle}</h6>
                                 <p>{project.desc}</p>
                             </div>
                             <div className={Styles.SkillIcons}>
