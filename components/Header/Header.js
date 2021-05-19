@@ -29,11 +29,11 @@ const Header = () => {
     }
 
     return (
-        <div>
+        <>
             <ParticlesBG />
             <div className={Styles.Header}>
                 <div className={Styles.CenterText}>
-                    <h1>{info.name}</h1>
+                    <h1 className={Styles.Name}>{info.name}</h1>
                     <p className={Styles.Slogan}>{info.slogan}</p>
                 </div>
                 <label id="theme-switcher" className={Styles.Switch}>
@@ -47,7 +47,7 @@ const Header = () => {
             <div className={Styles.BackToTopBtn} >
                 <img id="not-dark" onClick={scrollTo} alt="ScrollUp" title="ScrollUp" width="128" height="128" src="/thor.svg" />
             </div>
-        </div>
+        </>
     )
     
 }
