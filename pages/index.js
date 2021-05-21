@@ -13,6 +13,7 @@ const Projects = dynamic(() => import('../components/Projects/Projects'))
 import Styles from '../styles/index.module.scss'
 import Footer from '../components/Footer/Footer';
 import BackToTopBtn from '../components/BackToTopBtn/BackToTopBtn';
+import Contact from '../components/Contact/Contact';
 export default function Home() {
 
   useEffect(() => {
@@ -37,6 +38,7 @@ export default function Home() {
         <Projects />
       </div>
       <BackToTopBtn />
+      <Contact />
       <Footer />
     </>
   )
