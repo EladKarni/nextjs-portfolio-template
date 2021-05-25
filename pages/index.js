@@ -24,6 +24,7 @@ export default function Home() {
       duration: 600,
       easing: "ease",
       delay: 100,
+      disable: window.innerWidth <= 1100,
     });
   }, []);
 

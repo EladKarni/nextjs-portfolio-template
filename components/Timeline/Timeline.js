@@ -9,13 +9,7 @@ const Timeline = () => (
     <div className={Styles.TimelineContainer}>
       {jobs.map((data, idx) => (
         <div
-          data-aos={
-            idx % 2 == 0
-              ? "fade-left"
-              : process.browser && window.innerWidth <= 1100
-              ? "fade-right"
-              : "fade-left"
-          }
+          data-aos={idx % 2 == 0 ? "fade-left" : "fade-right"}
           className={Styles.TimelineItem}
           key={idx}
         >
