@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Styles from './Contact.module.scss'
 
 function Contact() {
     const [success, setSuccess] = useState(false);
@@ -10,12 +11,12 @@ function Contact() {
     }, []);
 
     return (
-        <div maxWidth="sm">
+        <div className={Styles.Contact}>
             <h2>CONTACT</h2>
             {success && (
                 <p style={{ color: "green" }}>Thanks for your message! </p>
             )}
-            <div>
+            <div className={Styles.FormCard}>
                 <form 
                     name="contact" 
                     method="POST" 

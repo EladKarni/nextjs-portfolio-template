@@ -36,9 +36,9 @@ export default function Home() {
         <About/>
         <Timeline />
         <Projects />
+        <Contact />
       </div>
       <BackToTopBtn />
-      <Contact />
       <Footer />
     </>
   )
