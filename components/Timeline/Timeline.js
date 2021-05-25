@@ -1,7 +1,7 @@
-import React from 'react'
-import { timelineData as jobs } from '../../content'
+import React from "react";
+import { timelineData as jobs } from "../../content";
 
-import Styles from './Timeline.module.scss'
+import Styles from "./Timeline.module.scss";
 
 const Timeline = () => (
     <div className={Styles.Timeline}>
@@ -19,7 +19,9 @@ const Timeline = () => (
                 </div>
             ))}
         </div>
+      ))}
     </div>
-)
+  </div>
+);
 
-export default Timeline
+export default Timeline;
