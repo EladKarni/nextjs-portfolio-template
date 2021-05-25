@@ -16,7 +16,7 @@ function Contact() {
             {success && (
                 <p style={{ color: "green" }}>Thanks for your message! </p>
             )}
-            <div>
+            <div className={Styles.FormCard}>
                 <form 
                     name="ContactMe" 
                     method="POST"
