@@ -7,6 +7,8 @@
     height: 100vh;
     font-family: Montserrat, sans-serif;
     z-index: 2;
+    pointer-events: none;
+    
     .CenterText {
         position: absolute;
         margin: auto;
