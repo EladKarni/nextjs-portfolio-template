@@ -22,11 +22,11 @@ const Header = () => {
     }
 
     return (
-        <div>
+        <>
             <ParticlesBG />
             <div className={Styles.Header}>
                 <div className={Styles.CenterText}>
-                    <h1>{info.name}</h1>
+                    <h1 className={Styles.Name}>{info.name}</h1>
                     <p className={Styles.Slogan}>{info.slogan}</p>
                 </div>
                 <label id="theme-switcher" className={Styles.Switch}>
@@ -37,9 +37,8 @@ const Header = () => {
                     <a aria-label="call-to-action" href="#about"><button aria-label="call-to-action"><FontAwesomeIcon icon="arrow-circle-down" size="3x" /></button></a>
                 </div>
             </div>
-        </div>
+        </>
     )
-    
 }
 
 export default Header;
