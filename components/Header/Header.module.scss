@@ -8,7 +8,7 @@
     font-family: Montserrat, sans-serif;
     z-index: 2;
     pointer-events: none;
-    
+
     .CenterText {
         position: absolute;
         margin: auto;
@@ -27,7 +27,7 @@
                 font-family: "Anonymous Pro", monospace !important;
                 font-size: max(0.25vw, 22px);
                 margin: auto;
-                width: 50%;
+                width: 65%;
             }
 
             .AnimTypewriter {
@@ -134,4 +134,19 @@
         -ms-transform: translateX(26px);
         transform: translateX(26px);
     }    
+}
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        .CenterText {
+            h1{
+                font-size: 44px;
+            }
+
+            .Slogan {
+                width: 100%;
+            }
+        }
+    }
+
 }
