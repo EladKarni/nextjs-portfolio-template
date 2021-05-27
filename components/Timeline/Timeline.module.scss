@@ -1,11 +1,7 @@
 .Timeline {
     text-align: center;
-    width: 70%;
-    max-width: 1100px;
-    margin: auto;
-
-    
-
+    margin: auto;    
+    z-index: 2;
     h2 {
         color: var(--primary-color);
         font-weight: 500;
@@ -113,8 +109,7 @@
             }
             
             .Circle {
-                background-color: #fff;
-                border: 3px solid var(--primary-color);
+                background-color: var(--primary-color);
                 border-radius: 50%;
                 position: absolute;
                 top: calc(50% - 10px);
@@ -142,9 +137,6 @@
 
 @media only screen and (max-width: 1100px) {
     .Timeline {
-        width: 80%;
-        margin: auto;
-
         h2 {
             width: 100%;
         }
@@ -206,8 +198,8 @@
     .TimelineContainer {
         .TimelineContent {
             grid-template-areas:    'cmpy'
-                                    'time'
                                     'title'
+                                    'time'
                                     'text';
             grid-template-columns: 1fr;
             

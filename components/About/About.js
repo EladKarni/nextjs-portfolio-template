@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { info, about, skillsBar} from '../../content'
 import Skill from '../Skill/Skill'
 import Styles from './About.module.scss'
@@ -10,13 +9,8 @@ const About = () => {
             <div id="about" className={Styles.About}>
                 <div className={Styles.ProfileSkills}>
                     <div className={Styles.ProfileImage}>
-                        <Image id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
+                        <img id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
                     </div>
-                    {/* <div id="Skills" className={Styles.Skills}> 
-                        {skillsBar.map((skill) => 
-                            <Skill key={skill.name} faClass={skill.faClass} label={skill.name}/>
-                        )}
-                    </div> */}
                 </div>
                 <div className={Styles.AboutMe}>
                     <div className={Styles.AboutText}>
@@ -38,21 +32,22 @@ const About = () => {
                             {info.address}
                         </span>
                         <span>
-                            <a href={info.phone}>{info.phone}</a>
+                            <a href={`tel:${info.phone}`}>{info.phone}</a>
                         </span> 
                         <span>
                             {info.email}
                         </span>
                     </div>
                     <div className={Styles.ResumePortfolioBtns}>
-                        <div>
-                            <span>
-                                <a href="#about"><button>Download Resume<FontAwesomeIcon icon="download" size="lg" /></button></a>
-                            </span>
-                            <span>
-                                <a href="#about"><button>View Portfolio<FontAwesomeIcon icon="folder-open" size="lg" /></button></a>
-                            </span>
-                        </div>
+                        <span>
+                            <a href="#about"><button>Download Resume<FontAwesomeIcon icon="download" size="lg" /></button></a>
+                        </span>
+                        <span>
+                            <a href="#projects"><button>View Portfolio<FontAwesomeIcon icon="folder-open" size="lg" /></button></a>
+                        </span>
+                        <span>
+                            <a href="#"><button>Learn More >></button></a>
+                        </span>
                     </div>
                 </div>
             </div>

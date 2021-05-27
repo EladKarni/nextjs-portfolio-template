@@ -1,68 +1,16 @@
 export const info = {
     name: 'Some Person',
-    slogan: 'A Human Among Humans',
+    slogan: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam',
     address: 'City, State Country',
     phone: '(555) 555-5555',
     email: 'myaddress@domain.com'
 }
 
 export const about = {
-    profileImage: 'https://www.fillmurray.com/300/300',
+    profileImage: '/profile.webp',
     aboutText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?',
     contactText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse officiis autem vel totam, obcaecati doloribus consequatur adipisci molestiae sint ut quo itaque voluptatibus qui consequuntur id repellendus maxime soluta?'
-
 }
-
-export const skillsBar = [
-    {
-        name: "HTML5",
-        faClass: ['fab', 'html5']
-    },
-    {
-        name: "CSS3",
-        faClass: ['fab', 'css3']
-    },
-    {
-        name: "Javascript",
-        faClass: ['fab', 'js']
-    },
-    {
-        name: "React",
-        faClass: ['fab', 'react']
-    },
-    {
-        name: "SASS",
-        faClass: ['fab', 'sass']
-    },
-    {
-        name: "Node",
-        faClass: ['fab', 'node']
-    },
-    // {
-    //     name: "Python",
-    //     faClass: ['fab', 'python']
-    // },
-    // {
-    //     name: "Java",
-    //     faClass: ['fab', 'java']
-    // },
-    // {
-    //     name: "PHP",
-    //     faClass: ['fab', 'php']
-    // },
-    // {
-    //     name: "NPM",
-    //     faClass: ['fab', 'npm']
-    // },
-    // {
-    //     name: "Linux",
-    //     faClass: ['fab', 'linux']
-    // },
-    // {
-    //     name: "Yarn",
-    //     faClass: ['fab', 'yarn']
-    // },
-]
 
 export const timelineData = [
     {
@@ -122,7 +70,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -154,7 +102,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -186,7 +134,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -218,7 +166,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -250,7 +198,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
     {
         title: 'Project Title',
@@ -282,6 +230,10 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: 'https://via.placeholder.com/300x275',
+        preview: '/projectImage.png',
     },
 ]
+
+export const footer = {
+    message: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+}

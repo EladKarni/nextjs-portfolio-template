@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Skill from '../Skill/Skill'
 import { projects } from '../../content'
 
@@ -6,7 +5,7 @@ import Styles from './Projects.module.scss'
 
 const Projects = () => {
     return (
-        <div className={Styles.Projects}>
+        <div id="projects" className={Styles.Projects}>
             <div className={Styles.SectionTitle}>
                 <h2>Portfolio</h2>
                 <p>Here is a list of my past projects</p>
@@ -15,7 +14,7 @@ const Projects = () => {
                 {projects.map((project, index) =>
                     <div key={`${project.title}${index}`} className={Styles.ProjectElement}>
                         <div className={Styles.Preview}>
-                            <Image
+                            <img
                                 src={project.preview}
                                 alt="Picture of the author"
                                 width={300}
@@ -25,7 +24,7 @@ const Projects = () => {
                         <div className={Styles.InfoSection}>
                             <div className={Styles.Info}>
                                 <h4>{project.title}</h4>
-                                <h6>{project.subtitle}</h6>
+                                <h5>{project.subtitle}</h5>
                                 <p>{project.desc}</p>
                             </div>
                             <div className={Styles.SkillIcons}>

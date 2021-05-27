@@ -1,5 +1,5 @@
-module.exports = {
-    images: {
-      domains: ['www.fillmurray.com', 'via.placeholder.com'],
-    },
-  }
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer({})

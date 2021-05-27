@@ -1,26 +1,48 @@
 import React, { useEffect } from 'react';
-import About from '../components/About/About'
-import Header from '../components/Header/Header'
-import Projects from '../components/Projects/Projects';
-import Timeline from '../components/Timeline/Timeline';
+import dynamic from 'next/dynamic'
+import Head from 'next/head'
+
+import Header from "../components/Header/Header";
+
+const About = dynamic(() => import("../components/About/About"));
+const Timeline = dynamic(() => import("../components/Timeline/Timeline"));
+const Projects = dynamic(() => import("../components/Projects/Projects"));
+
+
 
 import Styles from '../styles/index.module.scss'
-export default function Home() {
+import Footer from '../components/Footer/Footer';
+import BackToTopBtn from '../components/BackToTopBtn/BackToTopBtn';
+import Contact from '../components/Contact/Contact';
 
+export default function Home() {
   useEffect(() => {
-    if (localStorage.getItem('mode') == 'Dark') {
-      document.documentElement.classList.toggle('dark-mode')
-      const checkbox = document.getElementById('mode-switch')
-      checkbox.checked = true
+    if (localStorage.getItem("mode") == "Dark") {
+      document.documentElement.classList.toggle("dark-mode");
+      const checkbox = document.getElementById("mode-switch");
+      checkbox.checked = true;
+
+      document.getElementById('not-dark').classList.toggle('inverse-dark')
+      document.getElementById('not').classList.toggle('inverse-dark')
     }
   }, [])
 
   return (
-    <div className={Styles.App}>
-      <Header/>
-      <About/>
-      <Timeline />
-      <Projects />
-    </div>
+    <>
+      <div className={Styles.App}>
+        <Head>
+          <title>Template Resume Website</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Elad's resume website that was built using an open source template that I developed with Next.JS" />
+        </Head>
+        <Header/>
+        <About/>
+        <Timeline />
+        <Projects />
+        <Contact />
+      </div>
+      <BackToTopBtn />
+      <Footer />
+    </>
   )
 }
