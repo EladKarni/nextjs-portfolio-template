@@ -10,6 +10,7 @@ const Header = () => {
         document.documentElement.classList.toggle('dark-mode')
         document.getElementById('not-dark').classList.toggle('inverse-dark')
         document.getElementById('not').classList.toggle('inverse-dark')
+        
         let imgPro = document.getElementsByClassName('img-pro')
         for(let i = 0; i < imgPro.length; i += 1) {
             imgPro.item(i).classList.toggle("inverse-dark");
