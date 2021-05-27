@@ -70,7 +70,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -102,7 +102,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -134,7 +134,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -166,71 +166,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
-    },
-    {
-        title: 'Project Title',
-        subtitle: 'Subtitle',
-        skills: [
-            {
-                name: "HTML5",
-                faClass: ['fab', 'html5']
-            },
-            {
-                name: "CSS3",
-                faClass: ['fab', 'css3']
-            },
-            {
-                name: "Javascript",
-                faClass: ['fab', 'js']
-            },
-            {
-                name: "React",
-                faClass: ['fab', 'react']
-            },
-            {
-                name: "SASS",
-                faClass: ['fab', 'sass']
-            },
-            {
-                name: "Node",
-                faClass: ['fab', 'node']
-            }
-        ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
-    },
-    {
-        title: 'Project Title',
-        subtitle: 'Subtitle',
-        skills: [
-            {
-                name: "HTML5",
-                faClass: ['fab', 'html5']
-            },
-            {
-                name: "CSS3",
-                faClass: ['fab', 'css3']
-            },
-            {
-                name: "Javascript",
-                faClass: ['fab', 'js']
-            },
-            {
-                name: "React",
-                faClass: ['fab', 'react']
-            },
-            {
-                name: "SASS",
-                faClass: ['fab', 'sass']
-            },
-            {
-                name: "Node",
-                faClass: ['fab', 'node']
-            }
-        ],
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
 ]
 
