@@ -21,6 +21,9 @@ export default function Home() {
       document.documentElement.classList.toggle("dark-mode");
       const checkbox = document.getElementById("mode-switch");
       checkbox.checked = true;
+
+      document.getElementById('not-dark').classList.toggle('inverse-dark')
+      document.getElementById('not').classList.toggle('inverse-dark')
     }
   }, [])
 
