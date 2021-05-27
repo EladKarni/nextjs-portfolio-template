@@ -39,14 +39,15 @@ const About = () => {
                         </span>
                     </div>
                     <div className={Styles.ResumePortfolioBtns}>
-                        <div>
-                            <span>
-                                <a href="#about"><button>Download Resume<FontAwesomeIcon icon="download" size="lg" /></button></a>
-                            </span>
-                            <span>
-                                <a href="#about"><button>View Portfolio<FontAwesomeIcon icon="folder-open" size="lg" /></button></a>
-                            </span>
-                        </div>
+                        <span>
+                            <a href="#about"><button>Download Resume<FontAwesomeIcon icon="download" size="lg" /></button></a>
+                        </span>
+                        <span>
+                            <a href="#projects"><button>View Portfolio<FontAwesomeIcon icon="folder-open" size="lg" /></button></a>
+                        </span>
+                        <span>
+                            <a href="#"><button>Learn More >></button></a>
+                        </span>
                     </div>
                 </div>
             </div>

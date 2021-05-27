@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <div className={Styles.App}>
         <Head>
-          <title>Elad's Resume Website</title>
+          <title>Template Resume Website</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="description" content="Elad's resume website that was built using an open source template that I developed with Next.JS" />
         </Head>
