@@ -5,7 +5,7 @@ import Styles from './Projects.module.scss'
 
 const Projects = () => {
     return (
-        <div className={Styles.Projects}>
+        <div id="projects" className={Styles.Projects}>
             <div className={Styles.SectionTitle}>
                 <h2>Portfolio</h2>
                 <p>Here is a list of my past projects</p>

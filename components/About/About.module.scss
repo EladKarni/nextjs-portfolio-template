@@ -3,36 +3,29 @@
     grid-template-columns: 0.5fr 2fr;
     grid-template-rows: auto;
     width: 100%;
-    margin: auto;
+    margin:auto;
+    padding:  10vh 0;
     justify-content: center;
     column-gap: 15px;
+    align-items: center;
     z-index: 2;
 
-    .ProfileSkills {
-        display: grid;
-        justify-content: center;
-        grid-auto-rows: min-content min-content;
-        row-gap: 25px;
+    .ProfileImage {
+        width: 120px;
+        height: 120px;
+        justify-self: center;
+    }
 
-        .ProfileImage {
-            margin-top: 25px;
-            width: 120px;
-            height: 120px;
-            justify-self: center;
-        }
-
-        img {
-            border-radius: 50%;
-            margin: auto;
-        }
+    img {
+        border-radius: 50%;
+        margin: auto;
     }
 
     .AboutMe {
         display: grid;
         grid-template-areas:
-                "about about about"
-                "contact btns btns";
-        grid-template-columns: 1fr 2fr;
+                "about"
+                "btns";
 
         p {
             line-height: 25px;
@@ -65,77 +58,73 @@
             }
         }
         .ContactText {
-            grid-area: contact;
-            display: grid;
-            align-content: center;
-            .Title {
-                box-sizing: border-box;
-                padding-bottom: 5px;
-                border-bottom: solid 2px var(--primary-color);
-                margin-bottom: 15px;
-
-                h1 {
-                    color: var(--primary-color);
-                    font-weight: 500;
-                }
-            }
-
-            span {
-                display: block;
-                font-size: calc(12px + .3vw);
-            }
+            display: none;
         }
         .ResumePortfolioBtns {
             grid-area: btns;
             margin: auto;
-            width: 225px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
 
-            div {
-                display: flex;
-                flex-direction: column;
+            span {
+                padding: 1rem 0;
+                max-width: 230px;
+                margin-right: 2rem;
+                width: 100%;
 
-                span {
-                    padding: 1rem 0;
-                    max-width: 250px;
+                svg {
+                    padding-left: 10px;
+                }
+
+                button {
                     width: 100%;
+                    background-color: var(--primary-color);
+                    color: #fff;
+                    border: #000;
+                    outline: #000;
+                    padding: 5px 5px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    &:active {
+                        outline: 0;
+                    }
+        
+                    &:hover {
+                        background-color: var(--hover-color);
+                    }
+                }
 
-                    svg {
-                        padding-left: 10px;
-                    }
-                    button {
-                        width: 100%;
-                        background-color: var(--primary-color);
-                        color: #fff;
-                        border: #000;
-                        outline: #000;
-                        padding: 5px 5px;
-                        border-radius: 3px;
-                        font-weight: bold;
-                        &:active {
-                            outline: 0;
-                        }
-            
-                        &:hover {
-                            background-color: var(--hover-color);
-                        }
-                    }
+                &:nth-child(2) button {
+                    background-color: transparent;
+                    color: var(--primary-color);
+                    border: 2px solid var(--primary-color);
+                }
+
+                &:last-child button {
+                    background-color: transparent;
+                    color: var(--primary-color);
                 }
             }
         }
     }
 }
-@media screen and (max-width: 1400px) {
-    .About {
-        .AboutMe {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
+// @media screen and (max-width: 1400px) {
+//     .About {
+//         .AboutMe {
+//             grid-template-columns: 1fr 1fr;
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .About {
         grid-template-columns: 1fr;
         
+        .ProfileImage {
+            margin: auto;
+        }
+
         .AboutMe {
             display: grid;
             grid-template-areas:
@@ -150,21 +139,43 @@
             }
 
             .ContactText {
-                span {
-                    font-size: calc(16px + .5vw);
+                grid-area: contact;
+                display: grid;
+                align-content: center;
+                .Title {
+                    box-sizing: border-box;
+                    padding-bottom: 5px;
+                    border-bottom: solid 2px var(--primary-color);
+                    margin-bottom: 15px;
+    
+                    h1 {
+                        color: var(--primary-color);
+                        font-weight: 500;
+                    }
                 }
             }
-        }
-    }
-    .Skills {
-        & > div {
-            font-size: 10px;
+
+            .ResumePortfolioBtns {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: space-between;
+
+                span {
+                    width: 75%;
+                    margin: auto;
+
+                    &:last-child button {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .About {
         width: 100%;
 
@@ -181,10 +192,13 @@
             .AboutText {
                 width: 100%;
             }
-        }
-        .ProfileSkills {
-            .Skills {
-                display: none;
+
+            .ResumePortfolioBtns {
+                span {
+                    width: 100%;
+                    margin: auto;
+                    max-width: 100%;
+                }
             }
         }
     }
