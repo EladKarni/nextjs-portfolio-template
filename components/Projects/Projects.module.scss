@@ -1,0 +1,91 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    z-index: 2;
+    .ProjectList {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .ProjectElement {
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-rows: 200px auto;
+            overflow: hidden;
+            background-color: var(--primary-color);
+            transition: 1s cubic-bezier(0,0,.55,1.36);
+
+            &:hover {
+                grid-template-rows: 50px auto;
+            }
+
+            &:hover .InfoSection .Info {
+                justify-content: start;
+                padding-top: 1rem;
+                height: 250px;
+                p {
+                    display: block;
+                }
+            }
+
+            &:hover .InfoSection {
+                grid-template-columns: 2fr 0.5fr;
+            }
+
+            .InfoSection {
+                z-index: 2;
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                padding: 0 10px;
+                background-color: var(--primary-color);
+                max-height: 250px;
+                
+                .Info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: #fff;
+                    transition: 1s linear;
+
+                    p {
+                        display: none;
+                    }
+                }
+
+                .SkillIcons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .Skills {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        color: var(--lightbg-color);
+                    
+                        & > div {
+                            font-size: 8px;
+                            margin: 3px;
+                        }
+            
+                        h6 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .SectionTitle {
+        text-align: center;
+    }
+}

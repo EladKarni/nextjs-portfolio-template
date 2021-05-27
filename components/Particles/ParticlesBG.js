@@ -3,31 +3,37 @@ import Particles from 'react-particles-js';
 function ParticlesBG() {
     return (
         <Particles
-            height="100vh"
-            width="100%"
             style={{
                 position: "absolute",
                 top: "0",
-                margin: "0",
-                padding: "0",
+                left: "0",
                 height: "100vh",
                 pointerEvents: "none",
-                color: 'black'
+                zIndex: 0
               }} 
             params={{
                 "particles": {
+                    "color": "#0000ff",
                     "number": {
                         "value": 50
                     },
                     "size": {
-                        "value": 3
+                        "value": 10,
+                        "random": true
+                    },
+                    "move": {
+                        "direction": "bottom",
+                        "out_mode": "out"
+                    },
+                    "line_linked": {
+                        "enable": false
                     }
                 },
                 "interactivity": {
                     "events": {
-                        "onhover": {
+                        "onClick": {
                             "enable": true,
-                            "mode": "repulse"
+                            "mode": "push",
                         }
                     }
                 }
