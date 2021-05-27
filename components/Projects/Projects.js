@@ -2,14 +2,12 @@ import Skill from '../Skill/Skill'
 import { projects } from '../../content'
 
 import Styles from './Projects.module.scss'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Projects = () => {
     return (
         <div id="projects" className={Styles.Projects}>
-            <div className={Styles.SectionTitle}>
-                <h2>Portfolio</h2>
-                <p>Here is a list of my past projects</p>
-            </div>
+            <SectionTitle>Projects</SectionTitle>
             <div className={Styles.ProjectList}>
                 {projects.map((project, index) =>
                     <div key={`${project.title}${index}`} className={Styles.ProjectElement}>
