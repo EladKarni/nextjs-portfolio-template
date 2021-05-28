@@ -70,7 +70,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -102,7 +102,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -134,7 +134,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -166,7 +166,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -198,7 +198,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
     {
         title: 'Project Title',
@@ -230,7 +230,7 @@ export const projects = [
             }
         ],
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tempus mauris, vel porta nibh. Nullam ut tristique velit. Integer molestie ligula quam, quis tristique velit suscipit lobortis.',
-        preview: '/projectImage.png',
+        preview: '/projectImage.webp',
     },
 ]
 

@@ -1,11 +1,12 @@
 import React from "react";
 import { timelineData as jobs } from "../../content";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Styles from "./Timeline.module.scss";
 
 const Timeline = () => (
   <div className={Styles.Timeline}>
-    <h2>Job Timeline</h2>
+    <SectionTitle>Job Timeline</SectionTitle>
     <div className={Styles.TimelineContainer}>
       {jobs.map((data, idx) => (
         <div

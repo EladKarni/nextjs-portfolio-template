@@ -9,7 +9,7 @@ const About = () => {
             <div id="about" className={Styles.About}>
                 <div className={Styles.ProfileSkills}>
                     <div className={Styles.ProfileImage}>
-                        <img id="not" alt="Picture of the author" width={120} height={120} src={about.profileImage} />
+                        <img className='image' alt="Website author" width={120} height={120} src={about.profileImage} />
                     </div>
                 </div>
                 <div className={Styles.AboutMe}>

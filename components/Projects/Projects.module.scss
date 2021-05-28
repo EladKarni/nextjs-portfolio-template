@@ -4,6 +4,7 @@
     margin: auto;
     align-items: center;
     z-index: 2;
+    
     .ProjectList {
         display: flex;
         flex-direction: row;
@@ -11,51 +12,71 @@
         justify-items: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 125px;
 
         .ProjectElement {
-            width: 300px;
-            height: 300px;
+            width: 450px;
+            height: 450px;
             display: grid;
-            grid-template-rows: 200px auto;
+            grid-template-rows: 300px auto;
             overflow: hidden;
-            background-color: var(--primary-color);
-            transition: 1s cubic-bezier(0,0,.55,1.36);
+            background-color: #FFF;
+            box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+            border-radius: 5px;
 
             &:hover {
                 grid-template-rows: 50px auto;
             }
 
+            &:hover .InfoSection {
+                grid-template-columns: 2fr 0.25fr;
+            }
+
             &:hover .InfoSection .Info {
-                justify-content: start;
-                padding-top: 1rem;
-                height: 250px;
+                height: 100%;
                 p {
                     display: block;
                 }
             }
 
-            &:hover .InfoSection {
-                grid-template-columns: 2fr 0.5fr;
+            &:hover .InfoSection .SkillIcons {
+                .Skills {
+                    height: 100%;
+                }
             }
 
             .InfoSection {
                 z-index: 2;
                 display: grid;
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 2fr .75fr;
                 padding: 0 10px;
-                background-color: var(--primary-color);
-                max-height: 250px;
-                
+                background-color: #FFF;
+                max-height: 400px;
+                border-top: 5px solid var(--primary-color) ;
+
                 .Info {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    color: #fff;
-                    transition: 1s linear;
+                    justify-content: space-evenly;
+                    color: var(--primary-color);
+                    height: 50%;
+                    align-self: center;
+                    h4 {
+                        font-size: 34px;
+                    }
+                    h5 {
+                        margin-bottom: 2vh;
+                        color: #777;
+                        font-size: 24px;
+                    }
 
                     p {
                         display: none;
+                        color: black;
+                        span {
+                            color: var(--primary-color);
+                            font-weight: bolder;
+                        }
                     }
                 }
 
@@ -63,17 +84,20 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-
+                    
                     .Skills {
                         display: flex;
                         flex-direction: row;
+                        row-gap: 0px;
                         flex-wrap: wrap;
-                        justify-content: center;
-                        color: var(--lightbg-color);
-                    
+                        justify-content: space-evenly;
+                        align-items: center;
+                        color: var(--primary-color);
+                        width: 100%;
+                        height: 50%;
+
                         & > div {
                             font-size: 8px;
-                            margin: 3px;
                         }
             
                         h6 {
@@ -87,5 +111,49 @@
 
     .SectionTitle {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Projects .ProjectList {
+        gap: 75px;
+
+        .ProjectElement {
+            width: 350px;
+            height: 350px;
+            grid-template-rows: 225px auto;
+
+            &:hover .InfoSection .Info {
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .InfoSection {
+                grid-template-columns: 1fr .5fr;
+                padding: 5px 10px;
+
+                .Info {                
+                    h4 {
+                        margin-bottom: 5px;
+                        font-size: 26px;
+                    }
+                    h5 {
+                        font-size: 22px;
+                    }
+                    h5, p{
+                        margin-bottom: 5px;
+                        line-height: 18px;
+
+                    }
+                }
+            }
+
+            .Preview {
+                img {
+                    width: 350px;
+                }
+            }
+        }
     }
 }
