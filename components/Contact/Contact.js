@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import SectionTitle from '../SectionTitle/SectionTitle'
+import { info } from '../../content'
+
 import Styles from './Contact.module.scss'
 
 function Contact() {
@@ -12,7 +15,7 @@ function Contact() {
 
     return (
         <div className={Styles.Contact}>
-            <h2>CONTACT</h2>
+            <SectionTitle>CONTACT</SectionTitle>
             {success && (
                 <p style={{ color: "green" }}>Thanks for your message! </p>
             )}
