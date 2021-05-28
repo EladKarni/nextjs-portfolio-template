@@ -8,9 +8,14 @@ const Header = () => {
     
     const toggleDarkMode = () =>  {
         document.documentElement.classList.toggle('dark-mode')
-        document.getElementById('not-dark').classList.toggle('inverse-dark')
-        document.getElementById('not').classList.toggle('inverse-dark')
-        
+        // document.getElementById('not-dark').classList.toggle('inverse-dark')
+        // document.getElementById('not').classList.toggle('inverse-dark')
+        // console.log(document.getElementsByClassName('image'))
+        // document.getElementsByClassName('image')
+        Array.prototype.forEach.call(document.getElementsByClassName('image'), function(el) {
+            el.classList.toggle('inverse-dark')
+        });
+
         if (document.documentElement.classList.contains('dark-mode'))
           localStorage.setItem('mode', 'Dark')
         else
