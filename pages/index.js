@@ -34,7 +34,7 @@ export default function Home() {
         <Head>
           <title>Template Resume Website</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta name="description" content="Elad's resume website that was built using an open source template that I developed with Next.JS" />
+          <meta name="description" content='Template resume website that was built Next.JS based off of a CRA project posted by kaustubhai on reddit' />
         </Head>
         <Header/>
         <About/>
