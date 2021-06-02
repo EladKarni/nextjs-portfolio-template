@@ -1,0 +1,77 @@
+
+
+.Header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Montserrat, sans-serif;
+    pointer-events: none;
+
+    .CenterText {
+        position: absolute;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            font-size: max(7vw, 64px);
+        }
+
+        .Name{
+            color: var(--primary-color);
+        }
+        
+        .Slogan {
+            font-family: "Anonymous Pro", monospace !important;
+            font-size: max(0.25vw, 22px);
+            margin: auto;
+            width: 65%;
+        }
+    }
+
+    a {
+        padding: 1rem 0;
+        width: 100%;
+        svg {
+            padding-left: 10px;
+        }
+
+        button {
+            pointer-events: auto;
+            margin-top: 5vh;
+            width: 60%;
+            background-color: var(--success-color);
+            color: #fff;
+            border: #000;
+            outline: #000;
+            padding: 5px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+
+            &:active {
+                outline: 0;
+            }
+
+            &:hover {
+                background-color: var(--success-hover-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        .CenterText {
+            h1{
+                font-size: 44px;
+            }
+
+            .Slogan {
+                width: 90%;
+            }
+        }
+    }
+
+}
