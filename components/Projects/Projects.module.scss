@@ -1,8 +1,4 @@
 .Projects {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
     z-index: 2;
     
     .ProjectList {
@@ -114,14 +110,14 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 525px) {
     .Projects .ProjectList {
         gap: 75px;
 
         .ProjectElement {
-            width: 350px;
-            height: 350px;
-            grid-template-rows: 225px auto;
+            width: 85vw;
+            height: 85vw;
+            grid-template-rows: 55.25vw auto;
 
             &:hover .InfoSection .Info {
                 h4 {
@@ -151,7 +147,8 @@
 
             .Preview {
                 img {
-                    width: 350px;
+                    max-width:100%;
+                    height:auto;
                 }
             }
         }
